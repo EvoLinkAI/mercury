@@ -15,8 +15,8 @@ authors = [
 license = { text = "MIT" }
 dependencies = [
   # Core — pinned to known-good ranges to limit supply chain attack surface
-  "openai>=2.21.0,<3",
-  "anthropic>=0.39.0,<1",
+  "openai>=2.36.0,<3",
+  "anthropic>=0.101.0,<1",
   "python-dotenv>=1.2.1,<2",
   "fire>=0.7.1,<1",
   "httpx[socks]>=0.28.1,<1",
@@ -64,7 +64,7 @@ google = [
   # Unified Gen AI SDK — same SDK for AI Studio (free dev key) and Vertex
   # AI / Gemini Enterprise Agent Platform.  Required by Mercury's Gemini
   # adapter; flip vertexai=True at call site for Vertex.
-  "google-genai>=1.0.0,<2",
+  "google-genai>=2.0.1,<3",
 ]
 # `mercury dashboard` (localhost SPA + API).  Not in core to keep the
 # default install lean — but always installed for Mercury since the
